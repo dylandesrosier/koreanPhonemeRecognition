@@ -1,0 +1,3 @@
+#!/Users/dylandesrosier/Documents/Projects/koreanPhonemeRecognition/bin/python3.7
+from numba.pycc import main
+main()
