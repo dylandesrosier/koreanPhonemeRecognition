@@ -11,6 +11,9 @@ import librosa
 def getScore(request):
   print(request.form,request.args, request.data, request.files)
 
+  return json.dumps({
+    "score": random.randint(0, 98)
+  })
   try:
     audio = request.files["audio"]
     audio.save("./recording.wav")
